@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    padding: 2% 3%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-title::before{
+    content: '\f005';
+    height: 900;
+    font-family: "Font Awesome 5 Free";
+    margin-right: 10px;
+}
+
+.navigation{
+    color: #5CA720;
+    font-size: 22px;
+    display: flex;
+}
+
+.icon{
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.promo{
+    width: 100%;
+    padding: 2% 0%; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #a5a1a185;
+}
+
+.promo-title{
+    text-transform: uppercase;
+    padding: 0 calc(3% + 5px);
+}
+
+.promo-subtitle{
+    padding: 0 4%;
+}
+
+.products{
+    width: 100%;
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2% 0;
+    width: 100%;
+}
+
+.card-products{
+    height: auto;
+    padding: 2% 3%;
+    overflow: hidden;
+}
+
+.img-card{
+    overflow: hidden !important;
+    height: 280px;
+    width: 280px !important;
+    object-fit: cover; 
+    transition:  0.5s ease;
+}
+
+.img-card:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card-title{
+    margin: 2% 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.colored{
+    color: #5CA720;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.contact{
+    border-top: 1px solid #a5a1a185;
+    width: 100%;
+    background-color: #F9F9F9;
+    padding: 4% 3%;
+    margin:2% 0;
+}
+
+.container-contact{
+    display: flex;
+    justify-content: space-between;
+ 
+    flex-wrap: wrap;
+}
+
+.contact-links{
+    text-align: left;
+}
+
+.contact-title{
+    padding: 2% 0;
+}
+
+.newsletter-title{
+    padding: 2% 0;
+    margin: 0 -4%;
+}
+
+.newsletter{
+    display: flex;
+    height: 45px;
+    margin: 2% 0;
+}
+
+.newsletter-input{
+   margin: 0 -5%;
+}
+
+.newsletter-button{
+    background-color: #5CA720;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 1% 6%;
+    font-weight: 900;
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer{
+    border-top: 1px solid #a5a1a185;
+    padding: 2% 3%;
+}
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-social{
+    color: #5CA720;
+    background: transparent !important;
+    font-size:  30px;
+    cursor: pointer;
+    padding: 0 6px;
+}
+
+.payment{
+    background-color: #F9F9F9;
+}
+
+.payment-img{
+    height: 40px;
+    padding: 0 2px;
+}
+
+
+@media screen and (max-width: 680px){
+    nav{
+        padding: 5% ;
+        width: 100%;
+    }
+
+    .promo{
+        padding: 5% 5px;
+    }
+    .icon{
+        padding: 10px;
+    }
+
+    .products{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 5% 5px 0px 5px;
+        align-content: center;
+    }
+
+    .card-products{
+        padding: 2% 15px;
+        max-width: 200px;
+        width: auto;
+        height: 300px;
+        margin: 0;
+        max-height: 250px;
+    }
+
+    .img-card{
+        width: 135px !important;
+        height: 135px;
+    }
+    
+    .container-contact{
+        margin: 10% 5%;
+    }
+    
+    .newsletter{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .newsletter-title{
+        margin: 8% 0 0 0 ;
+    }
+    .newsletter-input{
+        margin: 0;
+        width: 100%;
+        height: 50px;
+    }
+    .newsletter-button{
+        margin: 10px 0;
+        width: 100%;
+        height: 50px;
+    }
+
+    .footer{
+        padding: 5% 8%;
+    }
+}   
+    
+    
+
